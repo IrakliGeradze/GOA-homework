@@ -121,10 +121,5 @@ right(90)
 forward(70)
 end_fill()
 
-color("yellow")
-forward(35)
-right(90)
-left(90)
-forward(35)
 
 exitonclick()
