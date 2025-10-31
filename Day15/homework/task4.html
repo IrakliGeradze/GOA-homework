@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        select{
+            text-align: center;
+            text-align-last: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; text-align-last: center;">
+    <h1>Application Form</h1>
+    <br>
+    <label for="First Name">First Name:</label>
+    <input type="text" name="First Name" id="First Name">
+
+    <br>
+    <br>
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" name="lastname" id="lastname">
+
+    <br>
+    <br>
+
+    <label for="birth">Date Of Birth</label>
+    <input type="date" name="birth" id="birth"> 
+    <label for="email">Email Address:</label>
+    <input type="email" name="email" id="email">
+
+    <br>
+    <br>
+
+    <label for="position">Position Applying For:</label>
+    <select>
+        <option value="Junior Developer">Junior Developer</option>
+        <option value="Mid-Level Developer">Mid Level Developer</option>
+        <option value="Senior Developer">Senior Developer</option>
+    </select>
+    <br>
+    <br>
+    <label for="years">Years Of Experience:</label>
+    <select>
+        <option value="01">0-1 Years</option>
+        <option value="13">1-3 Years</option>
+        <option value="35">3-5 Years</option>
+        <option value="5+">5+ Years</option>
+    </select>
+    <br>
+    <br>
+    <label for="Preferred">Preferred Programming Language</label>
+    <select>
+        <option value="java">Java</option>
+        <option value="javascript">Javascript</option>
+        <option value="python">Python</option>
+        <option value="C#">C#</option>
+    </select>
+    <br>
+    <br>
+    <label for="location">Preferred Job Location</label>
+    <select>
+        <option value="remote">Remote</option>
+        <option value="New York">New York</option>
+        <option value="san francisco">San Francisco</option>
+        <option value="London">London</option>
+    </select>
+    <br>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password">
+    <label for="confirmpassword">Confirm Password:</label>
+    <input type="password" name="confirmpassword" id="confirmpassword">
+    <br>
+    <br>
+    <label for="sumbit"></label>
+    <input type="submit" name="sumbit" id="submit">
+    <label for="reset"></label>
+    <input type="reset" name="reset" id="reset">
+    </div>
+</body>
+</html>
