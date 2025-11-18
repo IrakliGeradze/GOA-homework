@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy</title>
+    <style>
+        body{
+            background-color: rgb(27, 27, 27);
+        }
+        header{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -15%);
+            display: flex;
+        }
+        a{
+            display: flex;
+            margin: 50px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            font-family:sans-serif;
+            font-weight: 500;
+            display: inline-block;
+            vertical-align: middle;
+            
+        }
+        .full-image{
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+        .table{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        label {
+            font-size: 20px; 
+            margin-right: 10px;   
+        }
+
+        input {
+            font-size: 15px;       
+            padding: 10px 15px;    
+            width: 100px;
+        }
+
+        button{
+            padding: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p id="Main"></p>
+        <a href="2cryptotask2.html">Main</a>
+        <a href="buy.html">Buy</a>
+        <a href="news.html">News</a>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <main>
+        <div style="text-align: center; color: white; align-items: center; justify-content: center;">
+            <p>Total Balance</p>
+            <h1>$ 15,728 USD</h1>
+            <h3>Current Chart</h3>
+            <img class="card" src="https://s3.tradingview.com/f/Fuk4SLst_big.png" width="1100">
+            <br>
+            <br>
+            <label for="buy"><button onclick="alert('Bitcoin Successfuly Bought! Please be careful')" style="font-size: 30px; color: green;">BUY</button></label>
+            <input type="number" name="buy" id="buy" required placeholder="Amount">
+            <button onclick="alert('Bitcoin Successfuly Sold!')" style="font-size: 30px; color: red;">SELL</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <table width="1000" border="1" style="color: white;" class="table">
+            <tr>
+                <th rowspan="2">Crypto</th>
+                <th colspan="2">Price</th>
+                <th rowspan="2">Percentage</th>
+                <th rowspan="2">Summary</th>
+            </tr>
+            <tr>
+                <th>1D</th>
+                <th>5D</th>
+            </tr>
+            <tr>
+                <th>Bitcoin</th>
+                <td>$91,984</td>
+                <td>$90,890</td>
+                <td>-3.25%</td>
+                <td>$3,038</td>
+            </tr>
+            <tr>
+                <th>Ethereum</th>
+                <td>$3,037</td>
+                <td>$3,037</td>
+                <td>-2.93%</td>
+                <td>$3,021</td>
+            </tr>
+            <tr>
+                <th>BNB</th>
+                <td>$914</td>
+                <td>$1509</td>
+                <td>-2.00%</td>
+                <td>$915</td>
+            </tr>
+            <tr>
+                <th>XRP</th>
+                <td>$451</td>
+                <td>$1040</td>
+                <td>-2.55%</td>
+                <td>$2.15</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <footer style="text-align: center; color: white;">
+        <p>Cryptocurrency prices are volatile and for informational purposes only. Please trade responsibly.</p>
+        <p>We value secure crypto transactions and transparency for all our users.</p>
+        <p>Stay updated with the latest in crypto - the future of finance is digital!</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!--6) შექმენი HTML ფაილი სახელად schedule.html სადაც გამოიყენებ internal სტილებს style თეგის საშუალებით head ნაწილში ვებგვერდზე დაამატე სათაური h1 ტექსტით ჩემი დღის განრიგი და unordered list სამი ან მეტი ელემენტით li მაგალითად გაღვიძება სწავლა თამაშის დრო სტილების შიგნით გაასტილე სათაური ლურჯ ფრად და ცენტრში color text-align სიის ელემენტებს მიანიჭე მწვანე ფერი არ გამოიყენო არც inline და არც external სტილები მხოლოდ internal-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: black;
+        }
+        ul{
+            text-align: center;
+        }
+        li{
+            background-color: green;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Day Routine(ჩემი ყველაზე საინტერესო დღის რუტინა)</h1>
+    <br>
+    <br>
+    <nav>
+        <ul>
+            <li> დილა
+                <ul>
+                    <li>დილას ვიღვიზებ 6 საათზე და ვარჯიშობ (კი ირაკლი როგორ არა)</li>
+                </ul>
+            </li>
+            <li> სწავლა
+                <ul>
+                    <li>სწავლას ვანიჭებ დიდ უპირატესობას ოღონდ ამაზე მართლა არვიტყუები</li>
+                </ul>
+            </li>
+            <li> თამაში
+                <ul>
+                    <li>თამაშით მე არვთამაშობ არაფერს რაც სწავლა დავიწყე მაქსიმუმ ჩემ პატარა დაიკოს ვეთამაშო თუ კომპიუტერიდან ავდექი</li>
+                </ul>
+            </li>
+            <li>გართობა
+                <ul>
+                    <li>არვიცი ეგ რასნიშნავს</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
