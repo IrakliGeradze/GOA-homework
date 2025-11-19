@@ -13,13 +13,11 @@ user_best_fruit = input("Enter the best fruit:(banana, apple, grape, watermelon,
 
 fruit_in_basket = False
 
-for fruits in fruits:
+for i in fruits:
     if fruits == user_best_fruit:
         fruit_in_basket = True
-        break
-
+        
 if fruit_in_basket:
     print("Good Choice")
 else:
     print("Fruit not in basket")
-    
