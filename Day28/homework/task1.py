@@ -1,1 +1,1 @@
-#davalebebi gvaq code wars shi.
+#davalebebi gvaq code wars shi. #ez

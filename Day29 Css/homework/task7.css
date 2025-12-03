@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+
+#p1{
+    font-family: Science Gothic;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Osage&display=swap');
+
+#p2{
+    font-family: Noto Sans Osage;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+#p3{
+    font-family: Quicksand;
+}

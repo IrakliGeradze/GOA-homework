@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irakli Geradze</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        header{
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            background: #efefef;
+            width: 100%;
+            padding: 0 0;
+            justify-content: end;
+            gap: 40px;
+            z-index: 1000;
+        }
+        header a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.3em;
+            margin: 50px;
+        }
+        .form {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            flex-direction: column;
+            gap: 10px;
+            width: 800px;
+            height: auto;
+            background-color: #272727;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+        }
+        .form .title {
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+            font-weight: 500;
+            letter-spacing: -1px;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form input {
+            outline: 0;
+            border: 1px solid rgb(219, 213, 213);
+            padding: 8px 14px;
+            border-radius: 8px;
+            width: 100%;
+            height: 50px;
+        }
+        .form textarea {
+            border-radius: 8px;
+            height: 100px;
+            width: 100%;
+            resize: none;
+            outline: 0;
+            padding: 8px 14px;
+            border: 1px solid rgb(219, 213, 213);
+        }
+        .form button {
+            align-self: flex-end;
+            padding: 8px;
+            outline: 0;
+            border: 0;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#About">ABOUT</a>
+        <a href="#Projects">PROJECTS</a>
+        <a href="#Contact">CONTACT</a>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br id="About">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; min-height: 400px; width: 100%;">
+            <div style="flex: 1 1 50%; min-width: 300px;">
+                <img src="me.png" 
+                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 13px;">
+            </div>
+            <div style="flex: 1 1 50%; min-width: 300px; padding: 40px;">
+                <h2 style="font-size: 36px; margin-bottom: 20px; color: #272727;">
+                    Hello, I'm Irakli Geradze
+                </h2>
+                <p style="font-size: 18px; line-height: 1.6; color: #555;">
+                    I'm a web designer/developer focused on creating modern, minimal, and easy-to-use digital experiences.
+                </p>
+                <a href="#Projects" 
+                    style="display:inline-block; margin-top: 20px; padding: 12px 24px; 
+                        background-color:#d1d1d1; color:rgb(0, 0, 0); border-radius: 8px; 
+                        text-decoration:none; font-weight:600;">
+                    Projects
+                </a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 style="text-align: center; margin: 0 auto; font-family: sans-serif; color: #272727; font-size: 1.5em;" id="Projects">My Famous Projects</h2>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+            <div class="card-container" style="display:flex; flex-wrap:wrap; gap:100px; justify-content:center;">
+        <div class="card" style="width:320px; display:flex; flex-direction:column; background:#f9f9f9; border-radius:12px; overflow:hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.15); transition: transform 0.3s;">
+            <img src="icon1.png" alt="Lunas natural creams" style="width:100%; height:300px; object-fit:cover; transition: transform 0.3s;">
+            <div class="card-content" style="flex:1; display:flex; flex-direction:column; justify-content:space-between; text-align:center; padding:20px;">
+                <div>
+                    <h3 style="font-size: 22px; color: #272727;">Cosmetic Shop Web</h3>
+                    <br>
+                    <h3><a style="color: #272727;" href="web.html">See Website</a></h3>
+                    <p style="margin-top: 10px; color: #555; font-weight: 600;">HTML CSS JAVASCRIPT</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width:320px; display:flex; flex-direction:column; background:#f9f9f9; border-radius:12px; overflow:hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.15); transition: transform 0.3s;">
+            <img src="bank.png" alt="bank icon" style="width:100%; height:300px; object-fit:cover; transition: transform 0.3s;">
+            <div class="card-content" style="flex:1; display:flex; flex-direction:column; justify-content:space-between; text-align:center; padding:20px;">
+                <div>
+                    <h3 style="font-size: 22px; color: #272727;">Bank Program</h3>
+                    <p style="margin-top: 10px; color: #555; font-weight: 600;">PYTHON</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width:320px; display:flex; flex-direction:column; background:#f9f9f9; border-radius:12px; overflow:hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.15); transition: transform 0.3s;">
+            <img src="tour.png" alt="Georgian Tourism Icon" style="width:100%; height:300px; object-fit:cover; transition: transform 0.3s;">
+            <div class="card-content" style="flex:1; display:flex; flex-direction:column; justify-content:space-between; text-align:center; padding:20px;">
+                <div>
+                    <h3 style="font-size: 22px; color: #272727;">Georgian Tourism Web</h3>
+                    <br>
+                    <h3><a style="color: #272727;" href="https://georgiantourism.vercel.app/">See Website</a></h3>
+                    <p style="margin-top: 10px; color: #555; font-weight: 600;">HTML CSS JAVASCRIPT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+            <br><br>
+            <h2 id="Contact" style="text-align: center; margin: 0 auto; font-family: sans-serif; color: #272727; font-size: 1.5em;" id="Projects">Contact Me</h2>
+            <br>
+            <br>
+            <form class="form" id="contactForm">
+                <input id="name" type="text" placeholder="Name" class="input" required>
+                <input id="email" type="email" placeholder="Email" class="input" required>
+                <input id="number" type="tel" placeholder="Phone Number" class="input" required>
+                <textarea id="message" placeholder="Message" required></textarea>
+                <button style="background-color: white; color: black;" type="button" id="sendBtn">Send Message</button>
+                
+            </form>
+            <br>
+            <br>
+            <br>
+            <br>
+    </section>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <footer>
+        <h4 style="text-align: center;"> IRAKLI GERADZE / ALL RIGHTS DESERVED</h2>
+    </footer>
+    <br>
+</body>
+</html>
