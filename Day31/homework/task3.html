@@ -1,0 +1,77 @@
+<!-- 4) შექმენით ცხრილი რომელშიც იქნება სტუდენტების სია, თითოეულს ექნება სახელი, საგანი და ქულა. ცხრილის მეორე სვეტს (საგანს) ცალკე სტილი მიანიჭეთ td:nth-child(2) სელექტორით (მაგ: სხვა ფერი ან ფონური ფერი). მთლიან ცხრილზე და td/th-ებზე გამოიყენეთ border კუთვნილება, ხოლო ცხრილის ბოლოს დააკოპირეთ ის და მეორე ვერსიას მიუმატეთ border-collapse: collapse; კომენატარებში დაწერეთ რა განსხვავებაა ორი ცხრილის გარეგნობაში -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        #table1{
+            background-color: green;
+        }
+        #table1 th, #table1 td{
+            border: 1px solid red;
+        }
+        tr:nth-child(even) {
+            background-color: gray;
+        }
+        #table1 td:nth-child(2) {
+            background-color: purple;
+        }
+        #table2{
+            background-color: green;
+        }
+        #table2 th, #table2 td{
+            border: 1px solid red;
+        }
+        tr:nth-child(even) {
+            background-color: gray;
+        }
+        #table2 td:nth-child(2) {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <button>Click Here</button>
+    <a href="">Main Page</a>
+    <table id="table1">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Luka</td>
+                <td>Math</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Irakli</td>
+                <td>Laziness</td>
+                <td>SSS</td>
+            </tr>
+            <tr>
+                <td>Saba</td>
+                <td>Geography</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>Giorgi</td>
+                <td>English</td>
+                <td>B</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

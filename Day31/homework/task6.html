@@ -1,0 +1,52 @@
+<!-- 7) შექმენით რეგისტრაციის ფორმა, სადაც იქნება 'სახელი', 'გვარი', 'ელფოსტა' და 'პაროლი' ველები. მიანიჭეთ ყველა input[type=text] და input[type=password] ელემენტს border-radius: 8px; border: 2px solid gray; ღილაკს მიანიჭეთ background-color: green; color: white; font-weight: bold; გამოიყენეთ button:hover რათა მაუსის გადატარებისას ფერი გახდეს darkgreen -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,      initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            border: 1px solid gray;
+            color: red;
+            background-color: black;
+            width: 200px;
+            height: 25px;
+            border-radius: 8px;
+        }
+        input[type='mail'] {
+            background-color: rgb(0, 255, 76);
+            border-radius: 8px;
+        }
+        input[type='password'] {
+            border-radius: 8px;
+            background-color: rgb(0, 255, 76);
+        }
+        input[type='name']{
+            border-radius: 8px;
+            background-color: rgb(0, 255, 76);
+        }
+        input[type='mail']:hover {
+            background-color: rgb(45, 99, 67);
+            border-radius: 8px;
+        }
+        input[type='password']:hover {
+            border-radius: 8px;
+            background-color: rgb(45, 99, 67);
+        }
+        input[type='name']:hover{
+            border-radius: 8px;
+            background-color: rgb(45, 99, 67);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="name" placeholder="Username">
+        <input type="mail" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <input type="submit">
+    </form>
+</body>
+</html>

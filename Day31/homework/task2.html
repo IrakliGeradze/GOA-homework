@@ -1,0 +1,32 @@
+<!-- 3) შექმენით ლინკების სია რომელშიც თითო ლინკი გადაჰყავს სხვადასხვა საიტზე (მაგ: sololearn, wikipedia, w3schools). თითოეულ ლინკს შეუცვალეთ ფერი და კიდევ ორი სტილი (მაგ: background-color, text-decoration) ოთხივე მდგომარეობაში: :link, :visited, :hover, :active. გამოიყენეთ კლასები და კომენტარებით დაუწერეთ რა მდგომარეობას წარმოადგენს თითოეული pseudo-class -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            color: black;
+            background-color: red;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(255, 255, 255);
+        }
+        a:active{
+            color: blue;
+        }
+        a:link{
+            box-shadow: 5px 5px 19px black;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://discord.com/channels/1076577844475482142/1420843159373611078">Discord</a>
+    <a href="https://generateqrs.netlify.app/">Free QR Code Generator</a>
+    <a href="https://www.pinterest.com/">pinterest</a>
+</body>
+</html>
