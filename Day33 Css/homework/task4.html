@@ -1,0 +1,39 @@
+<!-- 5) შექმენით div ელემენტი id="container". მას მიანიჭეთ width და height მნიშვნელობები, მაგალითად 300px და 200px, ასევე background-color.
+
+შემდეგ ამ ელემენტს გაუწერეთ შემდეგი თვისებები:
+- padding: 20px;
+- border: 5px solid black;
+- margin: 30px;
+
+დამატეთ კომენტარები კოდის თავზე ან შიგნით, სადაც განმარტავთ:
+- რა არის padding
+- რა არის border
+- რა არის margin
+- რა არის content
+
+ასევე მიუთითეთ, როგორ მუშაობს მთლიანობაში Box Model. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container img{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            padding: 20px;   /* padding 20 px zrdis am formas */
+            border: 5px solid black; /* ertymeba shavi zoli */
+            margin: 30px; /* margin shua kutxidan chamowevs kvevit aseve ashorebs sxva elementebs */
+            text-align: center;
+            font-size: 3em;
+            color: white;
+            /* content aris mtavari rasac vwert am container shi magalitad axla aris img */
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><img src="verif.png" alt=""></div>
+</body>
+</html>

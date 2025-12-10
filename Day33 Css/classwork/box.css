@@ -1,0 +1,40 @@
+/* body{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.box-one{
+    background-color: rgb(190, 96, 96);
+    border: 10px solid rgb(63, 8, 63);
+    padding: 5px 30px;
+    margin: 40px;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+}
+.box-two{
+    background-color: rgb(53, 53, 100);
+    border: 10px solid rgb(36, 138, 36);
+    padding: 5px 10px; /* 5px 10px -10px wevs marjvniv */
+    /* margin: 40px;  ashorebs sivrces da sxva elementebisgan */
+/* } */
+/* Css box model  */
+
+/* elementebi otxi shrit shignidan garet
+1.content - teqsti
+2.padding - contents da border shreebs dashoreba
+3.border - sazgvaris shre
+4.margin - ashorebs sxva elementebisgan da qmnis sivrces (uxilavi shre)
+
+paddind - 
+margin
+box-sizing
+*/
+#content{
+    background-color: blue;
+    border: 20px solid black;
+}
+#border{
+    background-color: red;
+    padding: 20px;
+}

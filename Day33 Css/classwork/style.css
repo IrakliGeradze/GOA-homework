@@ -1,0 +1,70 @@
+/* input{
+    border-radius: 6px;
+    width: 15%;
+    height: 10%;
+    /* font-size-adjust: 1; axali * */
+/* } */
+
+/** attribute selector iwereba magalitad: img[attribute="value"]**/
+/* input[type="text"] {
+    background-color: gray;
+} */
+
+/** es gastilavs texts **/
+/* input[type="email"] {
+    background-color: rgb(43, 43, 43);
+} */
+/** es gastilavs emails **/
+/* input[type="password"] {
+    box-shadow: 5px 5px 7px gray;
+} */
+/** es gastilavs parols **/
+/* input[type="submit"] {
+    width: 10%;
+} */
+/** es gastilavs submit gilaks **/
+/* input:hover{
+    box-shadow: 10px 10px 7px black;
+} */
+/* input[type="submit"] {
+    box-shadow: 0 0 15px gray;
+}
+
+input[type="submit"]:hover{
+    color: red;
+}
+
+img[src="#"] {
+    border-radius: 9px;
+}
+a[href="##"] {
+    color: purple;
+} */
+/* 
+1. elementis id, class vqmnit class da css shi vwert ese: .class {}
+2. shtamomavali selector  marto mtlians ro vstilavt
+3. multiselector 
+4. pseudo class selector mdgomareobis gastilva 
+5. attribute selector elements varchevt atributis saxit */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
