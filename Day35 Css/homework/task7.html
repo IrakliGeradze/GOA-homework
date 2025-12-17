@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f6fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        .profile {
+            position: relative;
+            margin-top: 100px;
+            background-color: white;
+            width: 320px;
+            padding: 25px 20px 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .profile h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .profile p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .message-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #ff4757;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        p.static-text {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #666666;
+            padding: 15px 20px;
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        @media(max-width: 400px) {
+            .profile {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Portfolio</header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="profile">
+        <img src="image.png" alt="Profile Photo">
+        <div class="message-badge">3</div>
+        <h2>ირაკლი გერაძე</h2>
+        <p>Full stack web developer</p>
+        <p>HTML / CSS / JS / PHP / REACT</p>
+    </div>
+    <p class="static-text"><button style="border: none; background-color: #666666; color: white;">See More</button></p>
+</body>
+</html>

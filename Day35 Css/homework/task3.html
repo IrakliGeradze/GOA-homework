@@ -1,0 +1,105 @@
+<!--sheqmenit msgavsi forma-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f0ea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+        h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            }
+        .name-row {
+            display: flex;
+            gap: 10px;
+            }
+        .name-row input {
+            flex: 1;
+            }
+        .query-type {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            }
+        textarea {
+            height: 80px;
+            resize: none;
+            }
+        .consent {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 14px;
+            }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            }
+        button:hover {
+            background-color: #005f52;
+            }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <h2>Contact Us</h2>
+        <form>
+        <div class="name-row">
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+        </div>
+        <input type="email" placeholder="Email Address" required>
+        <div class="query-type">
+            <label>
+            <input type="radio" name="query" value="general" required>
+            General Enquiry
+            </label>
+            <label>
+            <input type="radio" name="query" value="support" required>
+            Support Request
+            </label>
+        </div>
+        <textarea placeholder="Message" required></textarea>
+        <label class="consent">
+            <input type="checkbox" required>
+            I consent to being contacted by the team
+        </label>
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

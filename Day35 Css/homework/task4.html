@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            height: 100vh;
+            background-color: #0f0f0f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            background-color: #1f1f1f;
+            width: 320px;
+            padding: 30px 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .card h1 {
+            color: #ffffff;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        .card h2 {
+            color: #c5f82a;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .bio {
+            color: #cccccc;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .links a {
+            display: block;
+            background-color: #333333;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://i.pravatar.cc/150?img=47" alt="Profile Image" class="avatar">
+        <h1>Jessica Randall</h1>
+        <h2>London, United Kingdom</h2>
+        <p class="bio">"Front-end developer and avid reader."</p>
+        <div class="links">
+            <a href="#">GitHub</a>
+            <a href="#">Frontend Mentor</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!-- 7) შექმენით საიტი თქვენთვის სასურველ თემატიკაზე, გამოიყენეთ ყველაფერი რაც css-ში ისწავლეთ, ოთხივე პოზიციის ტიპის ჩათვლით -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            padding-top: 70px;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            z-index: 10;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #0099ff;
+            color: white;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+        }
+        .card {
+            position: relative;
+            background-color: white;
+            width: 220px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .card:hover{
+            background-color: gray;
+            cursor: pointer;
+        }
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: 20px;
+        }
+        .chat-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0099ff;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .chat-btn:hover {
+            background-color: #007acc;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Trips Wikipedia</h1>
+    </header>
+    <section class="hero">
+        <h2>იმოგზაურე მსოფლიოს გარშემო</h2>
+        <p>აღმოაჩინე ახალი ქვეყნები და კულტურები</p>
+    </section>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <section class="cards">
+        <div class="card">
+            <h3><a href="https://en.wikipedia.org/wiki/Paris">Paris</a></h3>
+            <p>სიყვარულის ქალაქი</p>
+            <span class="badge">TOP</span>
+        </div>
+        <div class="card">
+            <h3><a href="https://en.wikipedia.org/wiki/Tokyo">Tokyo</a></h3>
+            <p>ტექნოლოგიების ცენტრი</p>
+            <span class="badge">NEW</span>
+        </div>
+        <div class="card">
+            <h3><a href="https://en.wikipedia.org/wiki/New_York">New York</a></h3>
+            <p>ქალაქი, რომელსაც არასდროს სძინავს</p>
+            <span class="badge">HOT</span>
+        </div>
+    </section>
+    <button class="chat-btn">💬 Chat</button>
+    <br>
+    <hr>
+</body>
+</html>

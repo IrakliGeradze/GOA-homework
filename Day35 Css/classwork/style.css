@@ -1,0 +1,188 @@
+/* input{
+    border-radius: 6px;
+    width: 15%;
+    height: 10%;
+    /* font-size-adjust: 1; axali * */
+/* } */
+
+/** attribute selector iwereba magalitad: img[attribute="value"]**/
+/* input[type="text"] {
+    background-color: gray;
+} */
+
+/** es gastilavs texts **/
+/* input[type="email"] {
+    background-color: rgb(43, 43, 43);
+} */
+/** es gastilavs emails **/
+/* input[type="password"] {
+    box-shadow: 5px 5px 7px gray;
+} */
+/** es gastilavs parols **/
+/* input[type="submit"] {
+    width: 10%;
+} */
+/** es gastilavs submit gilaks **/
+/* input:hover{
+    box-shadow: 10px 10px 7px black;
+} */
+/* input[type="submit"] {
+    box-shadow: 0 0 15px gray;
+}
+
+input[type="submit"]:hover{
+    color: red;
+}
+
+img[src="#"] {
+    border-radius: 9px;
+}
+a[href="##"] {
+    color: purple;
+} */
+/* 
+1. elementis id, class vqmnit class da css shi vwert ese: .class {}
+2. shtamomavali selector  marto mtlians ro vstilavt
+3. multiselector 
+4. pseudo class selector mdgomareobis gastilva 
+5. attribute selector elements varchevt atributis saxit */
+
+
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 40px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    flex-direction: row;
+    /* justify-content: center; HORIZONTALURAD */
+    /* align-items: center; VERTIKALURAD */
+    /* flex-wrap: wrap;  karoche agi tu ver eteva chamoitans dabla ra*/
+/* } */
+/* .child{
+    background-color: rgb(66, 66, 66);
+    border: 2px solid red;
+    width: 150px;
+    height: 150px;
+}
+
+.o{
+    justify-content: center;
+    gap: 20px;
+}
+.t{
+    justify-content: center;
+        gap: 20px;
+}
+.th{
+    justify-content: center;
+        gap: 20px;
+}
+.f{
+    justify-content: center;
+        gap: 20px;
+}
+.fi{
+    justify-content: center;
+        gap: 20px;
+}
+.six{
+    justify-content: center;
+        gap: 20px;
+}
+.sev{
+    justify-content: center;
+        gap: 20px;
+}
+.ei{
+    justify-content: center;
+}
+.nine{
+    justify-content: center;
+}
+ */
+/* .container{
+    width: 1000px;
+    height: 500px;
+    background: #929292;
+    border: 1px solid #999;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+.child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+}
+.one {
+    background-color: red;
+    width: 35%;
+    height: 100%;
+}
+.two{
+    background-color: rgb(126, 202, 126);
+    width: 60%;
+    height: 45%;
+}
+.three{
+    background-color: purple;
+    width: 30%;
+    height: 22%;
+}
+.four{
+    background-color: rgb(56, 83, 143);
+    width: 30%;
+    height: 22%;
+}
+.five{
+    background-color: rgb(56, 83, 143);
+    width: 30%;
+    height: 22%;
+} */
+/*
+static - tavdapirveli pozicia
+relative - shegvilia gadaadgileba top bottom ...
+absolute -  shegvilia gaadgileba NEBISMIER adgilas
+fixed - batoni fixed i mogvyveba yvelgan ar gvshordeba ra 
+sticky - webo (ar ichmeva) same as absolute and fixed
+*/
+body{
+    font-size: 40px;
+}
+.parent{
+    background-color: blue;
+    padding: 20px;
+    position: relative;
+    width: 500px;
+}
+.items{
+    padding: 20px;
+    position: absolute;
+    right: 20px;
+}
+.one{
+    background-color: green;
+    position: absolute;
+    right: 20px;
+    padding: 5px;
+}
+.two{
+    background-color: red;
+    padding: 15px;
+}
+.three{
+    background-color: #5765eb;
+    padding: 10px;
+}
