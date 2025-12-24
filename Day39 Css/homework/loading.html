@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: 0 auto;
+            background-color: gray;
+            margin-top: 300px;
+            width: 400px;
+            height: 20px;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        div span{
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            display: block;
+            border-radius: 30px;
+            animation: slide 2s linear infinite;
+        }
+        @keyframes slide{
+            from{
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span></span>
+    </div>
+</body>
+</html>
