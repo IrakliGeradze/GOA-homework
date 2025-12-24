@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: gray;
+        }
+        .container{
+            width: 1000px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .container img{
+            width: 50%;
+            height: 600px;
+            border-radius: 20px;
+        }
+        .registration{
+            text-align: center;
+            margin-bottom: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            gap: 15px;
+        }
+        .registration h2{
+            color: rgb(54, 54, 54);
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+        .registration input{
+            width: 300px;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #efefef;
+        }
+        .registration a{
+            display: flex;
+            margin-left: 185px;
+            text-decoration: none;
+            font-family: sans-serif;
+            color: rgb(33, 93, 161);
+            font-size: 15px;
+        }
+        .registration button{
+            padding: 10px 120px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(33, 93, 161);
+            color: white;
+        }
+        .registration #abc{
+            text-align: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body> 
+    <br>
+    <div class="container">
+            <img src="imag.png" alt="">
+        <div class="registration">
+            <h2>Sign in</h2>
+            <br>
+            <input type="email" name="mail" id="mail" placeholder="E-Mail Adress">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <a href="#">Forgot Password?</a>
+            <button>Sign In</button>
+            <br>
+            <a id="abc" href="#">Don't have an account? Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>

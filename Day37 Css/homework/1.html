@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+        }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .card {
+            height: 200px;
+            border-radius: 14px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: hidden;
+        }
+        .card h2,
+        .card p {
+            position: relative;
+            margin: 0;
+        }
+        .card h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .card p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+<div class="cards-container">
+    <div style="background-color: blue;" class="card" style="background-image: url('southkorea.jpg')">
+        <h2>South Korea</h2>
+        <p>Seoul is very beautiful place</p>
+    </div>
+    <div style="background-color: rgb(97, 63, 36);" class="card" style="background-image: url('tbilisi.jpg')">
+        <h2>Tbilisi</h2>
+        <p>Tbilisi is very beautiful place</p>
+    </div>
+    <div style="background-color: blue;" class="card" style="background-image: url('newyork.jpg')">
+        <h2>New York</h2>
+        <p>New York is very beautiful place</p>
+    </div>
+    <div style="background-color: rgb(97, 63, 36);" class="card" style="background-image: url('paris.jpg')">
+        <h2>Paris</h2>
+        <p>Paris is very beautiful place</p>
+    </div>
+    <div style="background-color: blue;" class="card" style="background-image: url('tokyo.jpg')">
+        <h2>Tokyo</h2>
+        <p>Tokyo is very beautiful place</p>
+    </div>
+    <div style="background-color: rgb(97, 63, 36);" class="card" style="background-image: url('dubai.jpg')">
+        <h2>Dubai</h2>
+        <p>Dubai is very beautiful place</p>
+    </div>
+</div>
+</body>
+</html>

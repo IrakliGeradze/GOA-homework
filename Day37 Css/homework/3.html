@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            margin: 0;
+            background: #f5f6fa;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .left {
+            flex: 1;
+            background: #f1f2f6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px;
+        }
+        .left h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #5f5fff;
+            line-height: 1.2;
+        }
+        .left h1 span {
+            color: #6c63ff;
+        }
+        .left img {
+            max-width: 100%;
+            margin-top: 40px;
+        }
+        .right {
+            flex: 1;
+            background: #fff;
+            padding: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-box {
+            width: 100%;
+            max-width: 420px;
+        }
+        .top-link {
+            text-align: right;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .top-link a {
+            color: #6c63ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        h2 {
+            margin-bottom: 8px;
+        }
+        .desc {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+        .social {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .social button {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background: #fff;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .input-group {
+            margin-bottom: 16px;
+        }
+        input {
+            width: 100%;
+            padding: 14px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+        input:focus {
+            outline: none;
+            border-color: #6c63ff;
+        }
+        .password-box {
+            position: relative;
+        }
+        .create-btn {
+            width: 100%;
+            margin-top: 24px;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #6c63ff;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .create-btn:hover {
+            background: #5a52e0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        <img src="image.png" alt="">
+    </div>
+    <div class="right">
+        <div class="form-box">
+            <div class="top-link">
+                Already a user? <a href="#">Sign in</a>
+            </div>
+            <h2>Sign up</h2>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse minus voluptatem iusto perspiciatis labore aperiam eum laboriosam recusandae, reiciendis commodi vero veniam cumque fuga id unde nulla ea totam fugiat!</p>
+            <div class="input-group">
+                <input type="text" placeholder="Full name">
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="Email address">
+            </div>
+            <div class="input-group password-box">
+                <input type="password" placeholder="Password" id="password">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Confirm password">
+            </div>
+            <button class="create-btn">Create Account</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
