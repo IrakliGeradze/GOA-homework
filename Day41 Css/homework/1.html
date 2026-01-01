@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            justify-content: center;
+            background-color: red;
+            display: flex;
+            width: 300px;
+            transition-duration: 3s;
+            animation-name: move;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        .div:hover{
+            transform: translateX(200px);
+            background-color: purple;
+        }
+        .br{
+            width: 200px;
+            background-color: blue;
+            animation-name: spin;
+        }
+        @keyframes spin {
+            0% {
+                transform: translate(0);
+            }
+            25%{
+                transform: translateX(600px);
+            }
+            50%{
+                transform: translate(600px, 600px);
+                background-color: greenyellow;
+            }
+            75%{
+                transform: translate(0px, 600px);
+            }
+            100%{
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <h1>ss</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="br">
+        <h1>SS</h1>
+    </div>
+</body>
+</html>

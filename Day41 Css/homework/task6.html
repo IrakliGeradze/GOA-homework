@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .container img{
+            width: 80px;
+            height: 80px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+        }
+        .loading{
+            width: 200px;
+            border-radius: 10px;
+            height: 5px;
+            background-color: rgb(73, 73, 73);
+            position: relative;
+            overflow: hidden;
+        }
+        .loading::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 100%;
+            background-color: white;
+            animation: loading 2s infinite;
+        }
+        @keyframes loading{
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image.png" alt="">
+        <div class="loading">
+        </div>
+    </div>
+</body>
+</html>

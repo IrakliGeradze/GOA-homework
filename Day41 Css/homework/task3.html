@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .cards{
+            display: flex;
+            gap: 25px;
+            cursor: pointer;
+        }
+        .cards img{
+            width: 50px;
+            height: 50px;
+            transition: filter 0.3s ease, transform 0.3s ease;
+        }
+        .facebook:hover{
+            filter: drop-shadow(0 0 8px #1877f2)
+                    drop-shadow(0 0 16px #1877f2);
+            transform: scale(1.1);
+        }
+        .twitter:hover{
+            filter: drop-shadow(0 0 8px #1da1f2)
+                    drop-shadow(0 0 16px #1da1f2);
+            transform: scale(1.1);
+        }
+        .youtube:hover{
+            filter: drop-shadow(0 0 8px #ff0000)
+                    drop-shadow(0 0 16px #ff0000);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <img class="facebook" src="facebook-svgrepo-com.svg" alt="Facebook">
+            <img class="twitter" src="twitter-round-svgrepo-com.svg" alt="Twitter">
+            <img class="youtube" src="youtube-round-svgrepo-com.svg" alt="YouTube">
+        </div>
+    </div>
+</body>
+</html>
