@@ -1,0 +1,120 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+/* #frame{
+    width: 500px;
+    height: 100px;
+    border: 5px solid black;
+    background-color: seagreen;
+}
+#bar{
+    width: 1%;
+    height: 100%;
+    background-color: blue;
+    padding: 5%;
+    animation-name: loading;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#bar h1{
+    margin-left: 300px;
+}
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+#loader{
+    border-radius: 50%;
+    background-color: seagreen;
+    width: 500px;
+    height: 500px;
+    border-top: 5px solid black;
+    animation-name: spin 1.2 linear infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+/* .heart{
+    border-radius: 50%;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    animation: heart 2s infinite;
+}
+@keyframes heart {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+} */
+body{
+    font-size: 5em;
+}
+.container{
+    display: grid;
+    /* grid-template-columns:  repeat(5, 1fr); gaameorebs xutjer imas
+    grid-template-columns: 300px 300px;
+    /* grid-auto-rows: 200px; */
+    /* grid-template-rows: minmax(); */
+    /* grid-gap: 40px;
+    grid-template-areas:
+    "item-1 item-2"; */
+    grid-gap: 40px;
+
+}
+.item{
+    background-color: rgb(1, 255, 1);
+    border: 2px solid rgb(0, 0, 0);
+}
+.item-1 {
+    grid-column: span 5;
+    text-align: center;
+    grid-row: span 3;
+}
+.item-2{
+    grid-row: span 15;
+    text-align: center;
+}
+.item-3{
+    grid-column: span 4;
+    text-align: center;
+    grid-row: span 10;
+}
+.item-4{
+    grid-column: span 2;
+    grid-row: span 5;
+}
+.item-5{
+    grid-column: span 2;
+    grid-row: span 5;
+}
+.item-6{
+    grid-column: span 5;
+    grid-row: span 5;
+    text-align: center;
+}
