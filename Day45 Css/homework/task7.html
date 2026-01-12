@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to right, rgb(255, 166, 0), orange);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sun{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgb(238, 255, 0);
+            box-shadow: rgb(128, 91, 14) 5px 6px 100px;
+            animation-name: move;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        .circle{
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            background-color: orange;
+            position: relative;
+            top: 15px;
+            left: 15px;
+        }
+        @keyframes move{
+            0%{
+                transform: translateX(0px);
+            }
+            50%{
+                transform: translateX(300px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sun">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
+
+<!-- ver gavakete es -->

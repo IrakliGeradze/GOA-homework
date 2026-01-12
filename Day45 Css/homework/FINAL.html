@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-image: url(https://www.hdwallpapers.in/download/stars_space_darkness_night_black_sky_background_hd_space-HD.jpg);
+        }
+        .dash {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid white;
+          border-radius: 50%;
+          position: relative;
+        }
+        .size1 {
+          width: 860px; 
+          height: 860px; 
+        }
+        .size2 { 
+          width: 760px; 
+          height: 760px; 
+        }
+        .size3 { 
+          width: 660px; 
+          height: 660px; 
+        }
+        .size4 { 
+          width: 560px; 
+          height: 560px; 
+        }
+        .size5 { 
+          width: 460px; 
+          height: 460px; 
+        }
+        .size6 { 
+          width: 360px; 
+          height: 360px; 
+        }
+        .size7 { 
+          width: 260px; 
+          height: 260px; 
+        }
+        .size8 { 
+          width: 160px; 
+          height: 160px; 
+        }
+        .size9 { 
+          width: 100px; 
+          height: 100px; 
+        }
+        .spinner {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          animation-name: spin;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+        }
+        .speed1 { 
+          animation-duration: 0s; 
+          transform: rotate(240deg);
+        }
+        .speed2 { 
+          animation-duration: 180s;
+        }
+        .speed3 { 
+          animation-duration: 130s; 
+        }
+        .speed4 { 
+          animation-duration: 100s; 
+        }
+        .speed5 { 
+          animation-duration: 25s; 
+        }
+        .speed6 { 
+          animation-duration: 5s; 
+        }
+        .speed7 {
+          animation-duration: 3s;
+        }
+        .speed8 { 
+          animation-duration: 2s; 
+        }
+        .speed9 { 
+          animation-duration: 1s; 
+        }
+        .spinner img {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          top: -20px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .center-img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dash size1">
+      <div class="spinner speed1">
+          <img src="pluto.png" alt="">
+        </div>
+      <div class="dash size2">
+        <div class="spinner speed2">
+          <img src="neptune.png" alt="">
+        </div>
+      <div class="dash size3">
+        <div class="spinner speed3">
+          <img src="uranus.png" alt="">
+        </div>
+      <div class="dash size4">
+        <div class="spinner speed4">
+          <img src="saturn.png" alt="">
+        </div>
+      <div class="dash size5">
+        <div class="spinner speed5">
+          <img src="jupiter.png" alt="">
+        </div>
+      <div class="dash size6">
+        <div class="spinner speed6">
+          <img src="mars.png" alt="">
+        </div>
+      <div class="dash size7">
+        <div class="spinner speed7">
+          <img src="earth.png" alt="">
+        </div>
+      <div class="dash size8">
+        <div class="spinner speed8">
+          <img src="venus.png" alt="">
+        </div>
+      <div class="dash size9">
+        <div class="spinner speed9">
+          <img src="mercury.png" alt="">
+        </div>
+        <img src="sun.png" class="center-img" alt="">
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+</body>
+</html>
