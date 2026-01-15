@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="colorBtn">Change Color</button>
+    <p id="para">Some Text</p>
+    <script>
+        let colorBtn = document.getElementById("colorBtn");
+        let para = document.getElementById("para"); 
+        colorBtn.addEventListener("click", function() {
+            para.style.color = "red";
+        });
+    </script>
+</body>
+</html>
