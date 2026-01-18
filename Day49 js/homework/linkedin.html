@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #efefef;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            padding: 10px 15px;
+        }
+        .header nav{
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        nav img {
+            position: relative;
+            right: 10%;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+        }
+        .line {
+            width: 1px;
+            height: 25px;
+            background-color: gray;
+        }
+        nav h2{
+            font-family: sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        nav button{
+            border: 1px solid blue;
+            padding: 5px 15px;
+            font-family: sans-serif;
+            font-size: 15px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        nav button:hover{
+            background-color: blue;
+            color: white;
+        }
+        nav h2:hover{
+            text-decoration: underline;
+            text-decoration-color: blue;
+        }
+        main h1{
+            color: rgb(185, 66, 66);
+            font-weight: 300;
+            position: relative;
+            left: 25%;
+            font-size: 45px;
+            width: 500px;
+        }
+        .form{
+            position: relative;
+            left: 25%;
+            width: 600px;
+        }
+        .form label{
+            font-family: sans-serif;
+            font-size: 15px;
+            display: block;
+        }
+        .form input{
+            height: 40px;
+            width: 350px;
+        }
+        .form a{
+            text-decoration: none;
+            color: rgb(54, 103, 240);
+            font-family: sans-serif;
+        }
+        #ragac{
+            background-color: rgb(0, 81, 255);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            width: 350px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+        #ragac:hover{
+            background-color: blue;
+            color: white;
+        }
+        .form p{
+            font-family: sans-serif;
+            font-size: 11px;
+            color: gray;
+            width: 350px;
+        }
+        .form button{
+            width: 350px;
+            padding: 15px 15px;
+            border-radius: 30px;
+            font-family: sans-serif;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        .form button:hover{
+            border: 1px solid blue;
+        }
+        .line{
+            width: 1px;
+            display: flex;
+            height: 25px;
+            background-color: gray;
+        }
+        .separator {
+            display: flex;
+            align-items: center;
+            width: 350px;
+        }
+        .separator-line {
+            height: 1px;
+            background-color: gray;
+            flex: 1;
+        }
+        .separator p {
+            width: auto;
+            padding: 0 10px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+        }
+        .container img{
+            width: 700px;
+            position: relative;
+            left: 20%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        @media (max-width: 768px){
+            nav {
+                font-size: 10px;
+                justify-content: center;
+                font-family: sans-serif;
+            }
+            nav img {
+                position: static;
+            }
+            .line {
+                display: none;
+            }
+            main h1 {
+                left: 0;
+                width: 100%;
+                text-align: center;
+                font-size: 30px;
+            }
+            .container {
+                flex-direction: column;
+            }
+            .form {
+                left: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .form input, #ragac, .form button, .separator, .form p {
+                width: 90%;
+                max-width: 350px;
+            }
+            .container img {
+                left: 0;
+                width: 80%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img width="150px" src="icon.png" alt="">
+            <a href="">Articles</a>
+            <a href="">People</a>
+            <a href="">Learning</a>
+            <a href="">Jobs</a>
+            <div class="line"></div>
+            <a href="">Get the app</a>
+            <div class="line"></div>
+            <br>
+            <h2>Join now</h2>
+            <br>
+            <button>Sign In</button>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <main>
+        <h1>Welcome to your <br>
+        professional community</h1>
+        <br>
+        <br>
+        <div class="container">
+            <div class="form">
+            <label for="">Email or phone</label>
+            <input type="text">
+            <br>
+            <br>
+            <label for="">Password</label>
+            <input type="password">
+            <br>
+            <br>
+            <a href="">Forgot password?</a>
+            <br>
+            <br>
+            <button id="ragac">Sign In</button>
+            <br>
+            <br>
+            <br>
+            <div class="separator">
+                <div class="separator-line"></div>
+                <p>Or</p>
+                <div class="separator-line"></div>
+            </div>
+            <br>
+            <p>By clicking continue to join or sign in, you agree to Linkedin's User Agreements Privacy Policy and Cookie Policy.</p>
+            <br>
+            <button>Continue with Google</button>
+            <br>
+            <br>
+            <button>New to <u style="text-decoration-color: blue; color: blue;">Linkedin?</u> Join now</button>
+        </div>
+        <img src="pic.png" alt="">
+        </div>
+    </main>
+</body>
+</html>
