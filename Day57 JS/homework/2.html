@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name" type="text" placeholder="username">
+    <input id="mail" type="email" placeholder="email">
+    <input id="password" type="password" placeholder="password">
+    <input id="confirmpassword" type="password" placeholder="confirm password">
+    <button onclick="none()" id="submit" type="submit">Register</button>
+    <h1 id="final"></h1>
+    <script>
+        let name = document.getElementById("name");
+        let mail = document.getElementById("mail");
+        let password = document.getElementById("password");
+        let confirmpassword = document.getElementById("confirmpassword");
+        let submit = document.getElementById("submit");
+        let final = document.getElementById("final");
+        
+        function none(){
+            if(name.value == "" || mail.value == "" || password.value == ""){
+                final.textContent = "Make sure to fill everything"
+            }
+            else if(password.length < 8){
+                alert("Password must be at least 8 characters")
+            }
+            else if(password.value != confirmpassword.value){
+                alert("Passwords dont match")
+            }
+            else{
+                final.textContent = "You have registered"
+            }
+        }
+    </script>
+</body>
+</html>
