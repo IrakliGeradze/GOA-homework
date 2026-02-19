@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="tasks" type="text" placeholder="tasks">
+    <button id="add">add</button>
+    <li id="todolist"></li>
+    <script src="script.js"></script>
+    <script>
+        let task = document.getElementById("tasks")
+        let add = document.getElementById("add")
+        let todolist = document.getElementById("todolist")
+        let tasks = []
+        add.onclick = function(){
+            tasks.push(task.value)
+            todolist.textContent = tasks
+            task.value = ""
+            tasks.append(task.value)
+        }
+    </script>
+</body>
+</html>

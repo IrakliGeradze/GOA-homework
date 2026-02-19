@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name" type="text" placeholder="username">
+    <input type="email" name="" id="email" placeholder="email">
+    <input id="password" type="password" placeholder="password">
+    <button id="button" type="submit">Sign Up</button>
+    <script src="script.js"></script>
+    <script>
+        let data = []
+        let name = document.getElementById("name");
+        let password = document.getElementById("password");
+        let button = document.getElementById("button");
+        let email = document.getElementById("email");
+
+        button.onclick = function(){
+            let name = document.getElementById("name").value;
+            let password = document.getElementById("password").value;
+            let email = document.getElementById("email").value;
+            data.push(new acc(name, password, email))
+        }
+
+        function acc(name, password, email){
+            this.accName = name;
+            this.accPassword = password;
+            this.accEmail = email;
+        }
+    </script>
+</body>
+</html>

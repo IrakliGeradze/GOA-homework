@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #efefef;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .calendar{
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            height: 550px;
+            padding: 5px 15px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            border-bottom-right-radius: 200px;
+        }
+        .top{
+            display: flex;
+            gap: 110px;
+            font-size: 17px;
+            font-weight: bold;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            align-items: center;
+            color: gray;
+        }
+        .bottom{
+            display: flex;
+            gap: 5px;
+        }
+        .bottom input{
+            padding: 5px 15px;
+            width: 130px;
+            border-radius: 8px;
+            border: 1px solid gray;
+            height: 40px;
+        }
+        #button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            padding: 30px 30px;
+            font-size: 19px;
+            background-color: rgb(132, 50, 209);
+            border: 1px solid gray;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            left: 90%;
+        }
+        #button:hover{
+            background-color: rgb(70, 24, 114);
+        }
+        .bot{
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            gap: 30px;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <div class="calendar">
+            <br>
+            <br>
+            <div class="top">
+                <p>DAY</p>
+                <p>MONTH</p>
+                <p>YEAR</p>
+            </div>
+            <div class="bottom">
+                <input id="inputDay" type="text">
+                <input id="inputMonth" type="text">
+                <input id="inputYear" type="text">
+                <br>
+                <br>
+            </div>
+            <br>
+            <div class="line">
+                <button id="button">↓</button>
+            </div>
+            <br>
+            <div class="bot">
+                <h1 id="years">1</h1>
+                <h1 id="months">2</h1>
+                <h1 id="days">3</h1>
+            </div>
+        </div>
+    </div>
+    <script src="calendar.js"></script>
+</body>
+</html>
