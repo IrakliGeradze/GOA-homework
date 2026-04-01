@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="script.js"></script>
+    <script>
+        let data = 
+        [
+            {
+                "Academy": "GOA",
+                "Students": 1500,
+                "CEO": "Nika Keshelava",
+                "Group-88-is-Best": true
+            },
+            {
+                "Academy": "Unknow",
+                "Students": 3,
+                "CEO": null
+            }
+        ]
+        //JSON.stringify() - js monacemta tipebs array,objet,bool, number, null pirdapir stringad gadawers
+        //JSON.parse() - strings gardaqmnis js realur monacemebad
+
+        console.log(JSON.parse(data))
+
+        localStorage.setItem("Academies", JSON.stringify(data));
+        console.log(JSON.parse(localStorage.getItem("Academies")));
+    </script>
+</body>
+</html>
