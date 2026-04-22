@@ -1,0 +1,13 @@
+[
+    {
+        "Academy": "GOA",
+        "Students": 1500,
+        "CEO": "Nika Keshelava",
+        "Group-88-is-Best": true
+    },
+    {
+        "Academy": "Unknow",
+        "Students": 3,
+        "CEO": null
+    }
+]
