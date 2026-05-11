@@ -45,13 +45,13 @@ function App() {
     };
     return (
         <div style={{ padding: "20px" }}>
-        <h1>📚 Book Library App</h1>
+        <h1>Book Library App</h1>
         <form onSubmit={searchBooks}>
             <input
-            type="text"
-            placeholder="Search books..."
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
+                type="text"
+                placeholder="Search books..."
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
             />
             <button type="submit">Search</button>
         </form>
