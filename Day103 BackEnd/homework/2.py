@@ -1,0 +1,1 @@
+# Node.js არის JavaScript runtime environment, რომელიც საშუალებას გვაძლევს JavaScript გავუშვათ ბრაუზერის გარეთ, ანუ სერვერზე.
